@@ -3,7 +3,7 @@ import { CreateCommand, IBrandRepository } from "../interface";
 import { BrandDTO, BrandSchema } from "../model/model";
 import { ErrorBrandNameTooShort } from "../model/error";
 import { v7 } from "uuid";
-import { ICommandHandler } from "../../../share/interface";
+import { ICommandHandler } from "@/share/interface";
 
 export class CreateBrandCmdHandler implements ICommandHandler<CreateCommand, string> {
 

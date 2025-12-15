@@ -1,3 +1,5 @@
+import 'module-alias/register'
+
 import express from 'express'
 import { setupCategoryHexagon } from './modules/category'
 
