@@ -1,11 +1,14 @@
 import 'module-alias/register'
+//import no dang bi @/modules ????
+
 
 import express from 'express'
 import { setupCategoryHexagon } from './modules/category'
+import { sequelize } from './share/component/sequelize'
 
 ( async () => {
 
-// await sequenlize.authenticate()
+await sequelize.authenticate()
 
 const app = express()
 

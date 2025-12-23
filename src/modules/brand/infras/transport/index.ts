@@ -66,4 +66,8 @@ export class BrandHttpService {
    await this.updateCmdHandler.execute(cmd)
    res.status(200).json({data: true   })
   }
+
+  async listByIds (req: Request, res: Response){
+    //call directly to repository cause it is same level
+  }
 }
